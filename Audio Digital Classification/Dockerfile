@@ -1,6 +1,6 @@
 FROM nvidia/cuda:12.1.0-devel-ubuntu18.04
 
-RUN apt-get update && apt-get install -y sox python3.7-dev python3.7-distutils curl
+RUN apt-get update && apt-get install -y sox python3.7-dev python3.7-distutils curl git
 RUN ln -s /usr/bin/python3.7 /usr/bin/python
 RUN ln -s /usr/bin/pip3 /usr/bin/pip
 
