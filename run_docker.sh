@@ -11,8 +11,8 @@ if [[ -d "$1" ]]; then
       -p 8888:8888 \
       --volume "$dir:$dir" \
       --workdir "$dir" --env HOME="$dir" \
-      --name hw1 hw1:latest jupyter notebook --allow-root --ip 0.0.0.0
+      --name hw1 hw1:latest jupyter notebook --NotebookApp.token='' --NotebookApp.password='' --allow-root --ip 0.0.0.0
 else
-    echo "Argument should be a directory"
+    echo -e "Argument should be a directory. "
 fi
 
