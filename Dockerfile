@@ -6,5 +6,5 @@ RUN ln -s /usr/bin/pip3 /usr/bin/pip
 
 RUN curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | python3.7
 # torch==1.7.1+cu101 if GPU exists
-RUN pip install torch==1.7.1 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-RUN pip install numpy==1.17.5 matplotlib==3.3.3 tqdm==4.54.0 jupyter
+RUN pip install torch==1.7.1+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip install numpy==1.17.5 matplotlib==3.3.3 tqdm==4.54.0 jupyterlab ipywidgets
