@@ -1,2 +1,2 @@
-# dl-audio
+# dla-course
 DL Audio course 
